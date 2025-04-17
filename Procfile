@@ -1,0 +1,1 @@
+web: gunicorn mipango_celules.wsgi

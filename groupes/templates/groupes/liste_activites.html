@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Activités pour le groupe {{ groupe.nom }}</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Jour</th>
+            <th>Tutaingiliya</th>
+            <th>Muhubiri</th>
+            <th>Kiongozi</th>
+            <th>Annonces</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for activite in activites %}
+        <tr>
+            <td>{{ activite.date }}</td>
+            <td>{{ activite.jour }}</td>
+            <td>{{ activite.tutaingiliya }}</td>
+            <td>{{ activite.muhubiri }}</td>
+            <td>{{ activite.kiongozi }}</td>
+            <td>{{ activite.annonces }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
