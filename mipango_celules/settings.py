@@ -18,6 +18,8 @@ SECRET_KEY = 'django-insecure-<replace-with-your-secret-key>'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# AJOUT ICI : pour corriger l'erreur DisallowedHost
+ALLOWED_HOSTS = ['mipango.onrender.com', 'localhost', '127.0.0.1']
 
 # Application definition
 INSTALLED_APPS = [
