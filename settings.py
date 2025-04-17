@@ -9,5 +9,5 @@ if 'RENDER' in os.environ:
     ALLOWED_HOSTS.append(os.environ['RENDER_EXTERNAL_HOSTNAME'])
     DEBUG = False
 else:
-    ALLOWED_HOSTS = []
+    ALLOWED_HOSTS = ['mipango.onrender.com', 'localhost', '127.0.0.1']
     DEBUG = True
